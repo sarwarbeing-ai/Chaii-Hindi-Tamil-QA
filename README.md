@@ -10,7 +10,7 @@ In this competition, our goal is to predict answers to real questions about Wiki
 Training data was divided into six folds .Six models have been build.Each model was build by fine tuning xlm-roberta large squad2 transformer model provided in Huggingface Transformer library.xlm-robert-large is a very large model thats the reason only one epoch for each fold was used.
 For example,ith model was trainned on data other than ith fold.
 To train the six models we need to run the chaii-hindi-tamil.ipynb script six times because of memory contraints in Kaggle platform as well as in colab.
-Each model's weight has been saved in separate folder. Those weights were used during inference.
+Each model's weight has been saved in separate folder.Then those weights were used later during inference.
 
 # 2.Inference:
 Prediction was done by just averaging the output of each model.
