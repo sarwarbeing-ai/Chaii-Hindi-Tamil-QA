@@ -6,12 +6,12 @@ Predicting answers to questions is a common NLU task, but not for Hindi and Tami
 In this competition, our goal is to predict answers to real questions about Wikipedia articles.
 
 # Three scripts:
-1.Training:
+# 1.Training:
 Training data was divided into six folds .Six models have been build.Each model was build by fine tuning xlm-roberta large squad2 transformer model provided in Huggingface Transformer library.xlm-robert-large is a very large model thats the reason only one epoch for each fold was used.
 To train the six models we need to run the chaii-hindi-tamil.ipynb script six times because of memory contraints in Kaggle platform as well as in colab.
 Each model's weight has been saved in separate folder. Those weights were used during inference.
 
-2.Inference:
+# 2.Inference:
 Prediction was done by just averaging the output of each model.
 
 
